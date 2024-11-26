@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMF Calculator</title>
+    <link rel="stylesheet" href="./EPFCALCSTYLE.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+        <h2>EMF Calculator</h2>
+        <div class="form-group">
+            <label for="basicSalary" class="form-control">Basic Salary (&#8377;):</label>
+            <input type="number" class="form-control" id="basicSalary" placeholder="Enter Basic Salary" required />
+        </div>
+        <div class="form-group">
+            <label for="employeeContributionRate" class="form-control">Employee Contribution Rate (%):</label>
+            <input type="number" class="form-control" id="employeeContributionRate" placeholder="Enter Rate" required />
+        </div>
+        <div class="form-group">
+            <label for="employerContributionRate" class="form-control">Employer Contribution Rate (%):</label>
+            <input type="number" class="form-control" id="employerContributionRate" placeholder="Enter Rate" required />
+        </div>
+        <button type="button" class="btn" id="calculate" onclick="calculateEPF()">Calculate</button>
+        <div class="result" id="result-box"></div>
+        
+    </div></div>
+
+    <script src="./EPFCALC.js"></script>
+</body>
+</html>
